@@ -1,0 +1,39 @@
+{
+  "name": "@fathah_cr/fathah",
+  "version": "0.0.1",
+  "description": "Lightweight NLP preprocessing package for Arabic language  ",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "npm run build"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fathah/fathah_js"
+  },
+  "keywords": [
+    "npm",
+    "fathah",
+    "nlp"
+
+  ],
+  "author": "Abdul Fathah KA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fathah/fathah_js/issues"
+  },
+  "homepage": "https://github.com/fathah/fathah_js#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
